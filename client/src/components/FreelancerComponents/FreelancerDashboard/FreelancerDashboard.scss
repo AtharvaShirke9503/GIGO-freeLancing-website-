@@ -1,0 +1,183 @@
+.FreelancerDashboard {
+    .section {
+      min-height: calc(100vh - 173px);
+    }
+  
+    .header {
+      font-size: 40px;
+      margin-top: 20px;
+    }
+  
+    .stats {
+      margin-top: 31px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: space-between;
+  
+      .card {
+        padding: 39px 20px;
+        width: calc(1320px / 5);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: rgba(21, 34, 50, 0.26) 10px 10px 20px;
+        border-radius: 10px;
+  
+        .info {
+          display: flex;
+          flex-direction: column;
+          gap: 14px;
+  
+          .title {
+            font-size: 16px;
+            color: var(--color-grey);
+          }
+  
+          .body-stat {
+            font-size: 28px;
+          }
+        }
+  
+        .logo {
+          width: 62px;
+          height: 62px;
+          border-radius: 50%;
+          background-color: var(--color-border-orange);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  
+    .serverStopped {
+      color: var(--color-orange);
+      font-size: 50px;
+      text-align: center;
+      font-weight: 700;
+      height: 78vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .testimonials {
+      margin-top: 30px;
+  
+      .header {
+        font-size: 35px;
+      }
+  
+      .cards {
+        margin-top: 42px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 15px;
+  
+        .noTestimonials {
+          color: var(--color-orange);
+          font-size: 50px;
+          text-align: center;
+          font-weight: 700;
+          height: 270px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+        }
+  
+        .card {
+          padding: 13px 34px;
+          display: flex;
+          flex-direction: column;
+          border-radius: 10px;
+          width: 80%;
+          background-color: var(--color-orange);
+          align-items: center;
+          justify-content: flex-start;
+          gap: 10px;
+          cursor: grab;
+          height: 100%;
+  
+          img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+          }
+  
+          .info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            gap: 18px;
+            margin-top: 18px;
+            min-width: 50%;
+  
+            .cardHeader {
+              font-size: 30px;
+            }
+  
+            .cardDescription {
+              font-size: 20px;
+              width: 60%;
+              text-align: center;
+              color: white;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  
+    .swiper-slide {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .swiper-wrapper {
+      align-items: center;
+    }
+  
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+      color: white;
+    }
+  
+    @media (max-width: 1400px) {
+      .stats {
+        gap: 60px;
+  
+        .card {
+          width: 500px;
+        }
+      }
+    }
+  
+    @media (max-width: 1200px) {
+      .stats {
+        gap: 25px;
+  
+        .card {
+          width: 420px;
+        }
+      }
+    }
+  
+    @media (max-width: 990px) {
+      .stats {
+        gap: 25px;
+  
+        .card {
+          width: 100%;
+        }
+      }
+    }
+  }

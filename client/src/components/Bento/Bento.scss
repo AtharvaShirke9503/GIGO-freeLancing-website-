@@ -1,0 +1,321 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.bento{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    
+
+
+
+    .container{ 
+        width: 100%;
+        height: 85vh;
+        background-color: #1a1a1a;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        z-index: 2;
+        
+        
+        
+        
+
+
+
+        .left{ 
+            width: 60%;
+            height: 80vh;
+           
+            // gap: 15px;
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+
+            .rectdiv{ 
+                width: 95%;
+                height: 40vh;
+                gap: 15px;
+               
+                display: flex;
+                flex-direction: column;
+
+
+                .rect1 {
+                    width: 100%;
+                    height: 19vh;
+                    cursor: pointer;
+                    border-radius: 20px;
+                    background-color: #1f82fb;
+                    transition: all 0.2s ease-in-out;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    
+                
+                    .job{
+                        font-size: 30px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 300px;
+                        height: 80px;
+                        background-color: #feebc4;
+                        border-radius: 40px;
+                        
+                        
+                    }
+
+                }
+
+              
+                .rect2 {
+                    width: 100%;
+                    cursor: pointer;
+                    height: 20vh;
+                    border-radius: 20px;
+                    background-color: #ffad48;
+                    transition: all 0.2s ease-in-out;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    h2{ 
+                        font-size: 45px;
+                    }
+
+                    img {
+                        width: 150px;
+                        height: 120px;
+                    }
+                }
+            }
+
+            .sqdiv{ 
+                width: 95%;
+                height: 40vh;
+                gap: 15px;
+                justify-content: center;
+                align-items: end;
+                display: flex;
+
+                .box1{  
+                    width: 100%;
+                    height: 38vh;
+                    cursor: pointer;
+                    border-radius: 20px;
+                    background-color: #fede6f;
+                    transition: all 0.2s ease-in-out;
+                    position: relative;
+                    
+                    
+
+                    
+                        h2{
+                            margin-left: 40px;
+                            
+                            
+                         }
+     
+                       
+
+                
+                    
+                    img{
+                        position: absolute;
+                        bottom: 0;
+                       
+                      
+
+                      .leaf{
+                        right: 0;
+                        width: 1000px;
+                        height: 1000px;
+                        z-index: 10;
+                        
+                      }
+                    }
+                }
+
+                .box2{
+                    width: 100%;
+                    cursor: pointer;
+                    height: 38vh;
+                    border-radius: 20px;
+                    background-color: #09c480;
+                    transition: all 0.2s ease-in-out;
+                    position: relative;
+
+                    .onetab{
+                        position: absolute;
+                        bottom: 20px;
+                       left: 20px;
+                        display: flex;
+                        width:250px;
+                        height: 50px;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 40px;
+                        background-color: #fede6f;
+                    }
+                    .onecircle{
+                        position: absolute;
+                        background-color: #3858cc;
+                        border-radius: 50%;
+                        width: 80px;
+                        height: 80px;
+                        bottom: 20px;
+                        right: 70px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    .twotab{
+                        position: absolute;
+                        bottom: 70px;
+                       left: 20px;
+                        display: flex;
+                        width: 300px;
+                        height: 50px;
+                        
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 40px;
+                        transform-origin: left center;
+                        transform: rotate(-6deg);
+                        background-color: #ff8080;
+                    }
+
+                   
+
+                }
+
+
+            }
+        }
+
+
+        .right { 
+            width: 40%;
+            height: 80vh;
+            gap: 15px;
+            display: flex;
+            
+            flex-direction:column;
+            align-items: flex-start;
+            align-self:center;
+            
+           
+            
+
+   
+               
+               
+
+                .bigbox1{ 
+                    width: 96%;
+                    height: 60vh;
+                    gap: 15px;
+                    cursor: pointer;
+                    border-radius: 20px;
+                    transition: all 0.2s ease-in-out;
+                    background-color: #bad11c;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+                    .tablets { 
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        
+                        
+                        .first,.second,.third,.four,.five {
+                            color: white;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 400px;
+                            height: 60px;
+                            background-color: #162201;
+                            border-radius: 40px ;
+                            transition: all 0.2s ease-in-out;
+
+
+                           
+                        }
+
+                        .first:hover{ 
+                            scale: 1.2;
+                        }
+                        .second:hover{ 
+                            scale: 1.2;
+                        }
+                        .third:hover{ 
+                            scale: 1.2;
+                        }
+                        .four:hover{ 
+                            scale: 1.2;
+                        }
+                        .five:hover{ 
+                            scale: 1.2;
+                        }
+
+                    }
+                  
+                  
+    
+                }
+    
+                .bigbox2{
+                    width: 96%;
+                    gap: 15px;
+                    cursor: pointer;
+                    border-radius: 20px;
+                    height: 40vh;
+                    transition: all 0.2s ease-in-out;
+                    background-color: #ff8080;
+    
+                }
+
+          
+
+            
+        }
+    }
+
+
+    .rect1:hover{
+                    
+        scale: 1.03;
+    }
+    .rect2:hover{
+                    
+        scale: 1.03;
+    }
+    .box1:hover{
+                    
+        scale: 1.03;
+    }
+    .box2:hover{
+                    
+        scale: 1.03;
+    }
+    .bigbox1:hover{
+                    
+        scale: 1.03;
+    }
+    .bigbox2:hover{
+                    
+        scale: 1.03;
+    }
+    
+}

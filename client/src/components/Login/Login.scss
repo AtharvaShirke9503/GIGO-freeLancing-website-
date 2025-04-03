@@ -1,0 +1,121 @@
+.Login {
+    img {
+      width: 500px;
+    }
+    
+    .container {
+      min-height: calc(100vh - 173px);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+     
+
+      
+      .loginForm {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        
+        .loginHeader {
+          color: black;
+          font-size: 50px;
+        }
+        
+        .formSection {
+          margin-bottom: 33px;
+        }
+      }
+      
+      form {
+        text-align: center;
+        
+        label {
+          display: inline-block;
+          color: white;
+          font-weight: bold;
+          width: 100%;
+          text-align: left;
+          font-size: 18px;
+          margin-bottom: 8px;
+        }
+        
+        input {
+          color: var(--color-orange);
+          outline: none;
+          width: 90%;
+          padding: 17px 20px;
+          
+          border: 2px solid black;
+          color: rgb(0, 0, 0);
+          font-size: 20px;
+          border-radius: 10px;
+          margin-bottom: 25px;
+          
+          &::placeholder {
+            color: rgb(0, 0, 0);
+          }
+          
+          &:focus::placeholder {
+            opacity: 0;
+            transition: 0.3s;
+          }
+        }
+      }
+      
+      button {
+        
+        cursor: pointer;
+        outline: none;
+        border: none;
+        border-radius: 30px;
+        background-color: #429FFD;
+        color: white;
+        width: 130px;
+        height: 45px;
+        font-size: 20px;
+      }
+    }
+    
+    .signupSection {
+      width: 100%;
+     margin-top: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+    
+    section span {
+      font-size: 20px;
+      color: var(--color-orange);
+    }
+    
+    @media (max-width: 1200px) {
+      img {
+        width: 400px;
+      }
+      
+      section .loginForm {
+        width: 400px;
+      }
+    }
+    
+    @media (max-width: 992px) {
+      section {
+        justify-content: center;
+        
+        .loginHeader {
+          text-align: center;
+          width: 100%;
+        }
+      }
+    }
+    
+    @media (max-width: 500px) {
+      section {
+        width: 90%;
+      }
+    }
+  }

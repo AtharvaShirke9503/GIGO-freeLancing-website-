@@ -1,0 +1,256 @@
+.con {
+
+
+ width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 40px;
+  margin-top: 50px;
+ 
+  
+  .grid {
+    display: grid;
+    height: 70%;
+    width: 70%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 16px;
+    background-color: #eee;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 
+      0 2px 4px rgba(0, 0, 0, 0.25),
+      0 1px 2px rgba(0, 0, 0, 0.1);
+      // font-family: "M PLUS 2 Variable", sans-serif;
+    
+
+    
+     
+
+      .salmon {
+        border-radius: 8px;
+        box-shadow: 
+          0 2px 4px rgba(0, 0, 0, 0.25),
+          0 1px 2px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        padding: 10px;
+        text-align: center;
+        grid-column: span 1;
+        grid-row: span 2;
+        background-color: rgba(255, 182, 193, 0.5);
+        
+        .maintext{
+          font-size: 60px;
+          text-wrap: wrap;
+          font-weight: 600;
+          color: #000;
+
+          text-align: start;
+        }
+        P{
+          font-size: 30px;
+          text-wrap: wrap;
+          font-weight: 400;
+          color: #000;
+          text-align: start;
+        }
+      }
+
+      .broccoli {
+        border-radius: 8px;
+        box-shadow: 
+          0 2px 4px rgba(0, 0, 0, 0.25),
+          0 1px 2px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        text-align: center;
+        grid-column: span 1;
+        grid-row: span 2;
+        background-color: rgba(173, 255, 47, 0.5);
+
+        h2{
+          font-size: 40px;
+        }
+
+        P{
+          font-size: 200px;
+        }
+      }
+
+      .tamago {
+        border-radius: 8px;
+        box-shadow: 
+          0 2px 4px rgba(0, 0, 0, 0.25),
+          0 1px 2px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        text-align: center;
+        grid-column: span 1;
+        grid-row: span 3;
+        background-color: rgba(255, 255, 224, 0.5);
+
+        .collect{
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          h2{
+            font-size: 40px;
+          }
+  
+          input{
+            outline: none;
+            padding: 20px;
+            font-size: 20px;
+            width: 100px;
+            border-radius: 20px;
+            border:none;
+            background-color: #BFEEBF;
+  
+          }
+        }
+      }
+
+      .pork {
+        border-radius: 8px;
+        box-shadow: 
+          0 2px 4px rgba(0, 0, 0, 0.25),
+          0 1px 2px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: stretch;
+        gap: 50px;
+       
+        
+        grid-column: span 2;
+        grid-row: span 11;
+        background-color: rgba(210, 180, 140, 0.5);
+        padding: 25px;
+
+        h2{
+          display: flex;
+          justify-content: start;
+          font-size: 30px;
+          text-wrap: wrap;
+          font-weight: 600;
+          color: #000;
+          text-align: start;
+          width: 100%;
+
+        }
+        
+        .card{
+
+          
+        .testimonial-list {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          max-height: 100%;
+        }
+
+        .testimonial-card {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          padding: 0px;
+          background-color: #fff;
+          border-radius: 8px;
+          box-shadow: 
+            0 2px 4px rgba(0, 0, 0, 0.2),
+            0 1px 2px rgba(0, 0, 0, 0.1);
+          width: 100%;
+        }
+
+        .testimonial-card img {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+
+        .testimonial-info {
+          display: flex;
+          flex-direction: column;
+          text-align: left;
+        }
+
+        .cardHeader {
+          font-weight: bold;
+          font-size: 20px;
+        }
+
+        .cardDescription {
+          font-size: 18px;
+          color: #ffffff;
+        }
+        }
+        
+       
+
+      }
+
+      .edamame {
+        border-radius: 8px;
+        box-shadow: 
+          0 2px 4px rgba(0, 0, 0, 0.25),
+          0 1px 2px rgba(0, 0, 0, 0.1);
+        display: flex;
+        
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        text-align: center;
+        grid-column: span 1;
+        grid-row: span 10;
+        background-color: rgba(144, 238, 144, 0.5);
+
+        h2{
+         text-wrap: wrap;
+         width: 208px;
+         text-align: start;
+         font-size: 40px;
+
+        }
+
+        p{
+         
+          padding: 10px;
+          border-radius: 10px;
+          background-color: #1AA68D;
+          font-size: 100px;
+        }
+      }
+    }
+  }
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pork {
+    grid-column: span 1 !important;
+  }
+}

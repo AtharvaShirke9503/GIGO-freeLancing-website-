@@ -1,0 +1,142 @@
+.FreelancerManageServices {
+    .section {
+      min-height: calc(100vh - 173px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .go-back-button {
+      align-self: flex-start;
+      margin-top: 20px;
+  
+      button {
+        margin-top: 7px;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        background-color: var(--color-orange);
+        color: white;
+        padding: 10px 55px;
+        font-size: 16px;
+        margin-top: 25px;
+        border-radius: 10px;
+      }
+    }
+  
+    .manageHeader {
+      font-size: 50px;
+      text-align: center;
+      color: var(--color-orange);
+      margin-block: 53px;
+    }
+  
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow-y: auto;
+  
+      td {
+        width: 25%;
+        padding: 17px 25px;
+      }
+  
+      tr {
+        border-bottom: 1px solid var(--color-grey);
+      }
+  
+      thead {
+        td {
+          font-size: 30px;
+        }
+      }
+  
+      tbody {
+        td {
+          font-size: 18px;
+  
+          &:last-of-type {
+            width: fit-content;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+          }
+  
+          button {
+            padding: 13px 33px;
+            color: white;
+            cursor: pointer;
+            outline: none;
+            font-size: 18px;
+            border: none;
+            min-width: 123px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+          }
+  
+          a {
+            text-decoration: none;
+  
+            &:first-of-type button {
+              background-color: var(--color-green);
+            }
+          }
+  
+          button:last-of-type {
+            background-color: var(--color-red);
+          }
+        }
+      }
+    }
+  
+    .noServices {
+      color: var(--color-orange);
+      font-size: 50px;
+      text-align: center;
+      font-weight: 700;
+      height: 270px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+  
+    @media (max-width: 550px) {
+      table {
+        display: inline-block;
+  
+        td {
+          width: 70%;
+        }
+  
+        thead {
+          td {
+            font-size: 20px;
+          }
+        }
+  
+        tbody {
+          td {
+            font-size: 16px;
+  
+            button {
+              font-size: 16px;
+              min-width: 117px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 10px;
+            }
+          }
+        }
+      }
+    }
+  
+    @media (max-width: 460px) {
+      table {
+        display: inline-block;
+      }
+    }
+  }
+  

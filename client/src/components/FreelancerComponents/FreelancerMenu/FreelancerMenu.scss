@@ -1,0 +1,40 @@
+.Menu {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0px;
+  
+    .link {
+      border-radius: 10px;
+      
+      a {
+        text-decoration: none;
+        cursor: pointer;
+        display: flex;
+        padding: 14px 21px;
+  
+        .linkHeader {
+          padding-left: 12px;
+          font-weight: 600;
+          color: var(--color-orange);
+        }
+      }
+  
+      &.active {
+        background-color: var(--color-border-orange);
+      }
+    }
+  }
+  
+  @media (max-width: 990px) {
+    .Menu {
+      .link {
+        display: flex;
+        width: 100px;
+        justify-content: center;
+      }
+      
+      .linkHeader {
+        display: none;
+      }
+    }
+  }
