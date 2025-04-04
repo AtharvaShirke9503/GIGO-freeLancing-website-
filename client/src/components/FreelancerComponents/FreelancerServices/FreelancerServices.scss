@@ -1,25 +1,54 @@
 .FreelancerServices {
-    .section {
-      min-height: calc(100vh - 273px);
-    }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 40px;
+
+    .lol {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      width: 90%;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.1);
+     
+      min-height: 600px;
+      padding: 20px;
+      border: 1px solid black;
+      border-radius: 10px;
+      margin-top: 50px;
+     
+      background-color: #ffffff;
+      gap: 20px;
+
+      h2{
+        font-size: 50px;
+        text-align: center;
+        color: black;
+        font-weight: 700;
+      }
     
     .buttons {
-      margin-block: 73px;
+      width: 100%;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-evenly;
-      gap: 130px;
+      justify-content: end;
+      gap: 10px;
+     
       
       button {
         cursor: pointer;
-        padding: 16px 46px;
-        width: 280px;
-        color: white;
-        background-color: var(--color-orange);
-        font-size: 30px;
+        
+        width: 200px;
+        height: 40px;
+        color: rgb(0, 0, 0);
+        background-color: #58c5aa;
+        font-size: 20px;
         outline: none;
         border: none;
-        border-radius: 10px;
+        border-radius: 50px;
       }
     }
   
@@ -35,110 +64,144 @@
         color: black;
       }
   
+      .slider{
+        
+        display: none;
+      }
+  
       .service {
-        width: 294px;
+        
+      
+        width: 300px;
+       
+        background-color: rgba(255, 255, 255, 0.233);
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-in-out;
+        padding: 10px;
         display: flex;
         flex-direction: column;
-        background-color: white;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: rgba(21, 34, 50, 0.26) 10px 10px 20px;
-        transition: 0.7s;
-  
+        gap: 10px;
+        
+      
         &:hover {
-          transform: translateY(-10px);
+          transform: translateY(-5px);
+          box-shadow: rgba(21, 34, 50, 0.25) 6px 6px 15px;
         }
   
-        .slider {
-          img {
-            width: 100%;
-            height: 193px;
-            cursor: grab;
-  
-            &:active {
-              cursor: grabbing;
-            }
-          }
+        img {
+          cursor: grab;
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
         }
   
         .serviceHeader {
+          background-color: #FEDE6F;
           font-size: 18px;
           display: flex;
-          gap: 10px;
-          margin-top: 15px;
-          margin-left: 15px;
           align-items: center;
-          font-weight: 500;
+          gap: 10px;
+          padding: 15px;
+          border-radius:0px 50px 50px 0px;
+         
   
           img {
-            width: 40px;
-            height: 40px;
+            width: 45px;
+            height: 45px;
             border-radius: 50%;
+            border: 2px solid #ddd;
+            
           }
         }
   
         .serviceTitle {
-          width: 100%;
-          overflow: hidden;
-          text-align: center;
-          font-size: 25px;
-          font-weight: 500;
+          background-color: #58c5aa;
+          border-radius:50px 0px 0px 50px;
+          padding: 10px;
+          
+          // background-color: #E0DBF2;
+          
+          // padding: 10px;
+          font-size: 20px;
+          font-weight: 600;
+          text-align: start;
+          
+        }
+  
+        .serviceBody {
+          
+          text-align: justify;
+          display: flex;
+          gap: 10px;
+          flex-direction: column;
+          justify-content: center;
         }
   
         .serviceDescription {
-          margin-left: 17px;
-          margin-right: 29px;
-          width: 249px;
-          height: 83px;
-          word-wrap: break-word;
+          font-size: 14px;
+          color: #666;
+          height: 60px;
+          
           overflow: hidden;
-          text-align: justify;
+          background-color: #FEDE6F;
+          border-radius: 10px;
+          // border-radius:0px 50px 50px 0px;
+
+          padding: 20px;
+          text-wrap: wrap;
         }
   
         .rating-more {
           display: flex;
           align-items: center;
-          padding-right: 24px;
-          margin-top: 15px;
-          margin-left: 17px;
           justify-content: space-between;
+          padding: 15px;
   
           .rating {
             font-weight: 500;
-            gap: 5px;
             display: flex;
             align-items: center;
-  
-            svg {
-              width: 24px;
-              height: 24px;
-              fill: orange;
-            }
+            gap: 5px;
           }
   
           button {
-            font-weight: bolder;
-            cursor: pointer;
-            background-color: var(--color-orange);
-            color: white;
-            padding: 10px 20px;
             outline: none;
             border: none;
-            border-radius: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            background-color: #58C5AA ;
+            color: black;
+            padding: 12px;
+          
+            border-radius: 50px;
+            transition: all 0.3s ease-in-out;
+  
+            &:hover {
+              background: black;
+              color: white;
+            }
+          }
+  
+          svg {
+            width: 22px;
+            height: 22px;
+            fill: orange;
           }
         }
   
         hr {
-          margin-block: 11.5px;
+          margin-block: 10px;
           width: 100%;
-          border-top: 0.5px;
+          border-top: 0.5px solid #ddd;
         }
   
         .servicePrice {
-          padding-inline: 29px;
+          padding: 15px;
           text-align: right;
-          padding-bottom: 9px;
-          font-size: 20px;
+          font-size: 18px;
+          font-weight: bold;
         }
       }
     }
@@ -162,4 +225,5 @@
         gap: 50px;
       }
     }
+  }
   }

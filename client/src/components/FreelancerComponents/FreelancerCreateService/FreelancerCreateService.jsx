@@ -98,8 +98,8 @@ export default function FreelancerCreateService() {
         <>
             {loading && <Loading />}
             <div className="FreelancerCreateService">
-                <div className="container">
-                    <div className="section">
+                <div className="wewe">
+                   
                         <HashLink className="go-back-button" to={`/dashboard/freelancer/${id}/services`}><button>Go Back</button></HashLink>
                         <div className="createHeader">
                             Create Service
@@ -123,9 +123,10 @@ export default function FreelancerCreateService() {
                             </div>
                             <button>Create</button>
                         </form>
-                    </div>
-                    <FreelancerMenu active="services" />
+                    
+                   
                 </div>
+                <FreelancerMenu active="services" />
             </div>
         </>
 

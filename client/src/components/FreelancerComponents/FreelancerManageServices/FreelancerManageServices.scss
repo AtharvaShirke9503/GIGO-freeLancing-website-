@@ -1,25 +1,36 @@
 .FreelancerManageServices {
-    .section {
-      min-height: calc(100vh - 173px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+
+    .tet {
+     min-height: 670px;
       display: flex;
       flex-direction: column;
       align-items: center;
-    }
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+      border-radius: 10px;
+      margin-top: 30px;
+
   
     .go-back-button {
       align-self: flex-start;
-      margin-top: 20px;
+    
   
       button {
         margin-top: 7px;
         cursor: pointer;
         outline: none;
         border: none;
-        background-color: var(--color-orange);
+        background-color: #1AA68D;
         color: white;
         padding: 10px 55px;
         font-size: 16px;
-        margin-top: 25px;
+        
         border-radius: 10px;
       }
     }
@@ -27,8 +38,8 @@
     .manageHeader {
       font-size: 50px;
       text-align: center;
-      color: var(--color-orange);
-      margin-block: 53px;
+      color: black;
+      margin-block: 13px;
     }
   
     table {
@@ -138,5 +149,6 @@
         display: inline-block;
       }
     }
+  }
   }
   

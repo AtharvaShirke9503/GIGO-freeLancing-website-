@@ -74,8 +74,8 @@ export default function ClientOrders() {
         <>
             {loading && <Loading />}
             <div className="ClientOrders">
-                <div className="container">
-                    <div className="section">
+                <div className="kan">
+                   
                         <div className="orders-header">
                             My Orders
                         </div>
@@ -135,9 +135,10 @@ export default function ClientOrders() {
                                     <div className='noServices'>You Didn't Made An Order Yet</div>
                             }
                         </div>
-                    </div>
-                    <ClientMenu active="orders" />
+                    
+                   
                 </div>
+                <ClientMenu active="orders" />
             </div>
         </>
     )

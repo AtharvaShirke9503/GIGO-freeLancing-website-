@@ -12,10 +12,11 @@ import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { useRef } from "react";
 import { toast } from "react-toastify";
-import { FaFacebook, FaInstagram, FaTwitter, FaGithub, FaDribbble } from "react-icons/fa";
+
 import "./Home.scss";
 import Bento from "../Bento/Bento";
 import Tab from "../Tab/Tab";
+import Footer from "../footer/Footer";
 
 export default function Home() {
   const { token } = useSelector((state) => state.user);
@@ -136,46 +137,12 @@ export default function Home() {
             </div>
           </div>
         </div> */}
-        <div className="tabface">
+        <div className="tabface" id="contactus">
         <Tab/>
       </div>
       </section>
 
-      <footer className="footer">
-      <div className="footer-container">
-        <div className="footer-brand">
-          
-          <span className="footer-title">GIGO</span>
-        </div>
-        <div className="footer-links">
-          <div className="footer-column">
-            <h4>ABOUT</h4>
-            <a href="#">one</a>
-            <a href="#">two </a>
-          </div>
-          <div className="footer-column">
-            <h4>FOLLOW US</h4>
-            <a href="#">Github</a>
-            <a href="#">Discord</a>
-          </div>
-          <div className="footer-column">
-            <h4>LEGAL</h4>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms & Conditions</a>
-          </div>
-        </div>
-      </div>
-      <div className="footer-bottom">
-        <p>&copy; 2025 GIGO™</p>
-        <div className="footer-social">
-          <FaFacebook />
-          <FaInstagram />
-          <FaTwitter />
-          <FaGithub />
-          
-        </div>
-      </div>
-    </footer>
+     <Footer/>
     </div>
   );
 }

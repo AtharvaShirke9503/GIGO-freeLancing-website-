@@ -40,12 +40,13 @@ export default function FreelancerServices() {
     <>
       {loading && <Loading />}
       <div className='FreelancerServices'>
-        <div className="container">
-          <div className="section">
+        <div className="lol">
+         
             <div className="buttons">
-              <HashLink to={`/dashboard/freelancer/${id}/services/create`}><button>Create Service</button></HashLink>
-              <HashLink to={`/dashboard/freelancer/${id}/services/manage`}><button>Manage Services</button></HashLink>
+              <HashLink to={`/dashboard/freelancer/${id}/services/create`}><button>Create </button></HashLink>
+              <HashLink to={`/dashboard/freelancer/${id}/services/manage`}><button>Manage </button></HashLink>
             </div>
+            <h2> My Services</h2>
             <div className="services">
               {data?.allServices && data.allServices.length != 0 ? data.allServices.map(service => <div key={service._id} className="service">
                 <div className="slider">
@@ -78,9 +79,10 @@ export default function FreelancerServices() {
                 </div>
               </div>) : <div className='noServices'>No Service for the moment</div>}
             </div>
-          </div>
-          <FreelancerMenu active="services" />
+          
+         
         </div>
+        <FreelancerMenu active="services" />
       </div>
     </>
 

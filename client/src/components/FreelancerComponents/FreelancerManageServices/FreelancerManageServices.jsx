@@ -90,8 +90,8 @@ export default function FreelancerManageServices() {
         <>
             {loading && <Loading />}
             <div className='FreelancerManageServices'>
-                <div className="container">
-                    <div className="section">
+                <div className="tet">
+                   
                         <HashLink className="go-back-button" to={`/dashboard/freelancer/${id}/services`}><button>Go Back</button></HashLink>
                         <div className="manageHeader">
                             My Services
@@ -120,9 +120,10 @@ export default function FreelancerManageServices() {
                             </table>
                             : <div className='noServices'>You have No Service For Now</div>}
 
-                    </div>
-                    <FreelancerMenu active="services" />
+                   
+                   
                 </div>
+                <FreelancerMenu active="services" />
             </div>
         </>
 

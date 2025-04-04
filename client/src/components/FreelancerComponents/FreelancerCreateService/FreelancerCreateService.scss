@@ -1,10 +1,20 @@
 .FreelancerCreateService {
-    .section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+    .wewe {
       min-height: calc(100vh - 173px);
       display: flex;
       flex-direction: column;
       align-items: center;
-    }
+      border: 1px solid black;
+      border-radius: 10px;
+      margin-top: 40px;
+      padding: 20px;
+      background-color: white;
+  
   
     .go-back-button {
       align-self: flex-start;
@@ -15,7 +25,7 @@
         cursor: pointer;
         outline: none;
         border: none;
-        background-color: var(--color-orange);
+        background-color:#58c5aa;
         color: white;
         padding: 10px 55px;
         font-size: 16px;
@@ -27,7 +37,7 @@
     .createHeader {
       font-size: 50px;
       text-align: center;
-      color: var(--color-orange);
+      color: black;
       margin: 20px 0 50px;
     }
   
@@ -39,7 +49,7 @@
   
       label {
         display: inline-block;
-        color: var(--color-orange);
+        color: black;
         font-weight: bold;
         font-size: 14px;
         width: 100%;
@@ -48,9 +58,9 @@
       }
   
       input, textarea {
-        color: white;
-        background-color: var(--color-orange);
-        border: 2px solid var(--color-light-orange);
+        color: rgb(0, 0, 0);
+        background-color:white;
+        border: 2px solid black;
         outline: none;
         width: 90%;
         padding: 17px 20px;
@@ -59,7 +69,7 @@
       }
   
       textarea {
-        border: 1px solid var(--color-light-orange);
+        border: 2px solid black;
         min-width: 90%;
         max-width: 90%;
         min-height: 22px;
@@ -68,8 +78,8 @@
       .images {
         cursor: pointer;
         color: white;
-        background-color: var(--color-orange);
-        border: 2px solid var(--color-light-orange);
+        background-color:#58c5aa;
+        
         width: 90%;
         padding: 17px 20px;
         font-size: 18px;
@@ -84,7 +94,7 @@
         outline: none;
         border: none;
         border-radius: 30px;
-        background-color: var(--color-orange);
+        background-color: #58c5aa;
         color: white;
         padding: 10px 55px;
         font-size: 16px;
@@ -116,4 +126,5 @@
         gap: 32px;
       }
     }
+  }
   }

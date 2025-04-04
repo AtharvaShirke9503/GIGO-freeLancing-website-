@@ -9,6 +9,7 @@ import Loading from '../Loading/Loading';
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from "react";
 import "./Signup.scss"
+import Footer from "../footer/Footer";
 
 export default function Signup() {
     const name = useRef()
@@ -201,7 +202,7 @@ export default function Signup() {
                         </div>
                    
                 </div>
-                <SpecialFooter />
+                <Footer/>
             </div>
         </>
     )

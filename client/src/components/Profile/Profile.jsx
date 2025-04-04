@@ -118,8 +118,8 @@ export default function Profile({ type }) {
         <>
             {loading && <Loading />}
             <div className='Profile'>
-                <div className="container">
-                    <div className="section">
+                <div className="pwp">
+                    
                         <form encType="multipart/form-data" onSubmit={e => e.preventDefault()}>
                             <div className="profileHeader">
                                 <div className="profiledescription">
@@ -168,9 +168,10 @@ export default function Profile({ type }) {
                                 </div>
                             </div>
                         </form>
-                    </div>
-                    {type == "1" ? <FreelancerMenu active="profile" /> : <ClientMenu active="profile" />}
+                   
+                   
                 </div>
+                {type == "1" ? <FreelancerMenu active="profile" /> : <ClientMenu active="profile" />}
             </div>
         </>
     )

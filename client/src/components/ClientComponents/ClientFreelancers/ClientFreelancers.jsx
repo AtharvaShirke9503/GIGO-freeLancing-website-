@@ -65,17 +65,12 @@ export default function ClientServices() {
       {loading && <Loading />}
       <div className='ClientServices'>
         <div className="contain">
+
+          <div className="head">
+            Freelancers
+          </div>
           
-            <div className="buttons">
-              <select onChange={e => setSort(e.target.value)}>
-                <option value="price">Sort By : Price</option>
-                <option value="rating">Sort By : Rating</option>
-              </select>
-              <select onChange={e => setOrder(e.target.value)}>
-                <option value="asc">Order : Asc</option>
-                <option value="desc">Order : Desc</option>
-              </select>
-            </div>
+            
             <div className="services">
               {allServices && allServices.length != 0 ? allServices.map(service => <div key={service._id} className="service">
                 <div className="slider">

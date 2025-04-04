@@ -45,8 +45,8 @@ export default function Chat({ type }) {
     <>
       {loading && <Loading />}
       <div className='Chat'>
-        <div className="container">
-          <div className="section">
+        <div className="chan">
+         
             {data?.userConversation?.length != 0 ?
               <>
                 <div className="messages">
@@ -87,10 +87,11 @@ export default function Chat({ type }) {
             }
 
 
-          </div>
-          {type == "freelancer" ? <FreelancerMenu active="chat" /> : <ClientMenu active="chat" />}
+          
+          
 
         </div>
+        {type == "freelancer" ? <FreelancerMenu active="chat" /> : <ClientMenu active="chat" />}
       </div>
     </>
 

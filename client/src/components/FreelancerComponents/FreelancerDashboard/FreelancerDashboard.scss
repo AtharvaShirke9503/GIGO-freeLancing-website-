@@ -1,183 +1,278 @@
-.FreelancerDashboard {
-    .section {
-      min-height: calc(100vh - 173px);
+.ghan {
+  display: flex;
+ margin-top: 50px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.grid1 {
+  display: grid;
+  
+  height: 70%;
+  width: 70%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 16px;
+  background-color: #eee;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+// Specific styles for each item
+.salmon1 {
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  grid-column: span 2;
+  grid-row: span 1;
+  padding: 10px;
+  
+  background-color: rgba(255, 174, 187, 0.5);
+  .maintext1{
+    font-size: 50px;
+    text-wrap: wrap;
+    font-weight: 600;
+    color: #000;
+
+    text-align: start;
+  }
+  P{
+    font-size: 30px;
+    text-wrap: wrap;
+    font-weight: 400;
+    color: #000;
+    text-align: start;
+  }
+}
+
+.broccoli1 {
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.1);
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+  grid-column: span 2;
+  grid-row: span 1;
+  background-color: rgba(173, 255, 47, 0.5);
+  gap: 40px;
+
+
+  .title1{
+    font-size: 50px;
+    text-wrap: wrap;
+    font-weight: 600;
+    color: #000;
+
+    text-align: start;
+  }
+
+  .body-stat1{
+    font-size: 70px;
+    text-wrap: wrap;
+    font-weight: 500;
+    color: #000;
+    text-align: start;
+  }
+}
+
+.tamago1 {
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: span 1;
+  grid-row: span 4;
+  background-color: rgba(255, 255, 224, 0.5);
+  padding: 10px;
+
+
+  
+  .collect1{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    
+    h2{
+      font-size: 35px;
     }
-  
-    .header {
-      font-size: 40px;
-      margin-top: 20px;
-    }
-  
-    .stats {
-      margin-top: 31px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      justify-content: space-between;
-  
-      .card {
-        padding: 39px 20px;
-        width: calc(1320px / 5);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        box-shadow: rgba(21, 34, 50, 0.26) 10px 10px 20px;
-        border-radius: 10px;
-  
-        .info {
-          display: flex;
-          flex-direction: column;
-          gap: 14px;
-  
-          .title {
-            font-size: 16px;
-            color: var(--color-grey);
-          }
-  
-          .body-stat {
-            font-size: 28px;
-          }
-        }
-  
-        .logo {
-          width: 62px;
-          height: 62px;
-          border-radius: 50%;
-          background-color: var(--color-border-orange);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-      }
-    }
-  
-    .serverStopped {
-      color: var(--color-orange);
-      font-size: 50px;
-      text-align: center;
-      font-weight: 700;
-      height: 78vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-    }
-  
-    .testimonials {
-      margin-top: 30px;
-  
-      .header {
-        font-size: 35px;
-      }
-  
-      .cards {
-        margin-top: 42px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        gap: 15px;
-  
-        .noTestimonials {
-          color: var(--color-orange);
-          font-size: 50px;
-          text-align: center;
-          font-weight: 700;
-          height: 270px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 100%;
-        }
-  
-        .card {
-          padding: 13px 34px;
-          display: flex;
-          flex-direction: column;
-          border-radius: 10px;
-          width: 80%;
-          background-color: var(--color-orange);
-          align-items: center;
-          justify-content: flex-start;
-          gap: 10px;
-          cursor: grab;
-          height: 100%;
-  
-          img {
-            width: 130px;
-            height: 130px;
-            border-radius: 50%;
-          }
-  
-          .info {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            text-align: center;
-            gap: 18px;
-            margin-top: 18px;
-            min-width: 50%;
-  
-            .cardHeader {
-              font-size: 30px;
-            }
-  
-            .cardDescription {
-              font-size: 20px;
-              width: 60%;
-              text-align: center;
-              color: white;
-              font-weight: 500;
-            }
-          }
-        }
-      }
-    }
-  
-    .swiper-slide {
-      width: 80%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-  
-    .swiper-wrapper {
-      align-items: center;
-    }
-  
-    .swiper-button-next:after,
-    .swiper-button-prev:after {
-      color: white;
-    }
-  
-    @media (max-width: 1400px) {
-      .stats {
-        gap: 60px;
-  
-        .card {
-          width: 500px;
-        }
-      }
-    }
-  
-    @media (max-width: 1200px) {
-      .stats {
-        gap: 25px;
-  
-        .card {
-          width: 420px;
-        }
-      }
-    }
-  
-    @media (max-width: 990px) {
-      .stats {
-        gap: 25px;
-  
-        .card {
-          width: 100%;
-        }
-      }
+
+    input{
+      outline: none;
+      padding: 20px;
+      font-size: 20px;
+      width: 100px;
+      border-radius: 20px;
+      border:none;
+      background-color: #BFEEBF;
+
+
+     
+
     }
   }
+
+
+}
+
+.pork1{
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.1);
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: stretch;
+  gap: 50px;
+  grid-column: span 2;
+  grid-row: span 2;
+  background-color: rgba(210, 180, 140, 0.5);
+  padding: 10px;
+  
+
+  h2{
+    display: flex;
+    justify-content: start;
+    font-size: 30px;
+    text-wrap: wrap;
+    font-weight: 600;
+    color: #000;
+    text-align: start;
+    width: 100%;
+
+  }
+  
+  .card{
+
+    
+  .testimonial-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 100%;
+  }
+
+  .testimonial-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 
+      0 2px 4px rgba(0, 0, 0, 0.2),
+      0 1px 2px rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+
+  .testimonial-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .testimonial-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .cardHeader {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .cardDescription {
+    font-size: 18px;
+    color: #ffffff;
+  }
+  }
+  
+ 
+
+}
+
+.edamame1 {
+
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.1);
+
+
+  padding: 10px;
+  
+  grid-column: span 1;
+  grid-row: span 2;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+  background-color: rgba(144, 238, 144, 0.5);
+ 
+
+
+  .title1{
+    font-size: 60px;
+    text-wrap: wrap;
+    font-weight: 600;
+    color: #000;
+
+    text-align: start;
+  }
+  .body-stat1{
+    border-radius: 10px;
+    background-color: #1AA68D;
+    height: 110px;
+    width: 100%;
+    font-size: 70px;
+
+    text-wrap: wrap;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    
+  }
+}
+
+.tomato1 {
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: span 3;
+  grid-row: span 2;
+  background-color: rgba(214, 77, 141, 0.5);
+  gap: 20px;
+
+  .title1{
+    font-size: 70px;
+    text-wrap: wrap;
+    font-weight: 700;
+    color: #000;
+
+    text-align: start;
+  }
+
+  .body-state1{
+    font-size: 70px;
+    text-wrap: wrap;
+    font-weight: 500;
+    color: #000;
+    text-align: start;
+  }
+}

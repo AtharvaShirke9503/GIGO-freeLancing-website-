@@ -8,6 +8,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import Loading from '../Loading/Loading';
 import { useEffect } from "react";
 import "./Login.scss"
+import Footer from "../footer/Footer";
 export default function Login() {
     const username = useRef()
     const password = useRef()
@@ -117,7 +118,7 @@ export default function Login() {
                         </div>
                     
                 </div>
-                <SpecialFooter />
+               <Footer/>
             </div>
         </>
     )
